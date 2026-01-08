@@ -5,6 +5,6 @@ const rounderSwitch = () => {
 };
 
 module.exports = {
-  measureRainSwitch,
-  rounderSwitch,
+  measureRainSwitch, 
+  rounderSwitch, 
 };
