@@ -10,7 +10,7 @@
 // 'rainy' if less than 6 inches
 // 'flood' if 6 or more inches
 
-function measureRain(inches) {
+const measureRain = (inches) => {
     if (inches === 0) {
         return 'drought';
     } else if (inches < 2) {
@@ -27,10 +27,10 @@ function measureRain(inches) {
 
 
 
-//const happyBirthdayPet = () => {
+const happyBirthdayPet = () => {
 // takes a string (breed of pet) and a number (age of pet in years) and returns a string};
 
-function happyBirthdayPet (breed, age) {
+//function happyBirthdayPet (breed, age) {
     if (breed === 'snake') {
       return 'Hiss hiss!';
     } else if (breed === 'dog') {
@@ -51,10 +51,10 @@ function happyBirthdayPet (breed, age) {
   }
 
 
-//const funTypes = () => {
+const funTypes = () => {
 //}; // takes a single argument of any type and returns a string based on the type and value of the argument
 
-function funTypes(jsType) {
+//function funTypes(jsType) {
     if (typeof jsType === 'string') {
         return "That's just some text.";
     } else if (typeof jsType === 'number') {
@@ -88,9 +88,9 @@ console.log(funTypes([1, 2, 3]));     // "I order you to be indexed."
 
 
 
-//const rounder = () => {
+const rounder = () => {
 //};
-function rounder(float, roundingSetting) {
+//function rounder(float, roundingSetting) {
     if (roundingSetting === 'up') {
         return Math.ceil(float);
     } else if (roundingSetting === 'down') {
@@ -111,9 +111,9 @@ console.log(rounder(4.3, 'invalid')); // "Invalid rounding setting
 
 
 
-//const formatName = () => {
+const formatName = () => {
 //}; 
-function formatName(first, last) {
+//function formatName(first, last) {
   function capitalize(name) {
     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
   }
@@ -127,9 +127,8 @@ console.log(formatName("NAOMI", "S")); // "Naomi S"
 
 
 
-//const extractDomain = () => {
-//};
-function extractDomain(email) {
+const extractDomain = () => {
+//function extractDomain(email) {
     const atIndex = email.indexOf("@");
     return email.slice(atIndex + 1);
 }
@@ -141,9 +140,9 @@ console.log(extractDomain("student@marcylab.org")); // "marcylab.org"
 
 
 
-//const startsWithVowel = () => {
+const startsWithVowel = () => {
 //};
-function startsWithVowel(word) {
+//function startsWithVowel(word) {
     const vowels = ['a', 'e', 'i', 'o', 'u'];
     if (word.length === 0) {
         return false;
@@ -159,9 +158,9 @@ console.log(startsWithVowel("")); // false
 
 
 
-//const rotate = () => {
+const rotate = () => {
 //};
-function rotate(array, positions) {
+//function rotate(array, positions) {
     const len = array.length;
     if (len === 0) return array; // Handle empty array
     const pos = positions % len; // Handle positions greater than array length
